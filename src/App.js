@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import { ErrorBoundary } from 'react-error-boundary';
+import { ErrorBoundary } from 'react-error-boundary';
 import Navbar from './pages/navbar';
 import Repos from './pages/repos';
 import SingleRepo from './pages/single-repo';
@@ -27,14 +27,14 @@ function App() {
             <Navbar />
           </div>
           <div className="col-md-12 d-flex justify-content-center">
-            {/* <ErrorBoundary FallbackComponent={ErrorFallback}> */}
+            <ErrorBoundary FallbackComponent={ErrorFallback}>
               <Routes>
                 <Route path="/" element={<Repos />} />
                 <Route path="/repos" element={<Repos />} />
                 <Route path="/repos/:repoName" element={<SingleRepo />} />
                 <Route path="*" element={<Page404 />} />
               </Routes>
-            {/* </ErrorBoundary> */}
+            </ErrorBoundary>
           </div>
         </div>
       </div>
