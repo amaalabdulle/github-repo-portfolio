@@ -1,0 +1,167 @@
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #7B55EA;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #4E387B;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #4E387B;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #4E387B;
+}
+
+.nav-link:hover {
+  color: #7B55EA;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.text2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #4E387B;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  background-color: #AEB3DC;
+  color: #4E387B;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E387B;
+}
+
+.card-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #7B55EA;
+}
+
+.btn-primary {
+  background-color: #7B55EA;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #4E387B;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page-item .page-link {
+  color: #4E387B;
+}
+
+.page-item .page-link:hover {
+  background-color: #7B55EA;
+  color: white;
+}
+
+.page-item.active .page-link {
+  background-color: #4E387B;
+  border-color: #4E387B;
+  color: white;
+}
+
+/* Dropdown styles */
+.dropdown .btn-outline-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4E387B;
+  color: white;
+  border: none;
+}
+
+.dropdown .btn-outline-secondary:hover {
+  background-color: #7B55EA;
+}
+
+.dropdown-menu {
+  min-width: 150px;
+}
+
+.bi-funnel {
+  font-size: 20px;
+}
+
+.list-group-item {
+  font-family: 'Poppins', sans-serif;
+  background-color: #AEB3DC;
+  color: #4E387B;
+  border: none;
+}
+
+.list-group-item strong {
+  color: #7B55EA;
+}
+
+@media (max-width: 768px) {
+  .dropdown .btn-outline-secondary {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown .btn-outline-secondary {
+    width: 30px;
+    height: 30px;
+  }
+}
+

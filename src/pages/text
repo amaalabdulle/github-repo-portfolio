@@ -1,0 +1,31 @@
+// import React, { useEffect, useState } from 'react';
+// const [repositories, setRepositories] = useState([]);
+
+//     function fetchRepositories(username) {    
+//         return fetch(`https://api.github.com/users/${username}/repos`)
+//         .then(response => {
+//             if (!response == true) {
+//                 console.log(response)
+//                 return response.json();
+//             } else{
+//                 throw new Error('Failed to load Repositories!')
+//             }
+//         })
+//     }
+//     useEffect(() => {
+//         const username = 'amaalabdulle';
+//         fetchRepositories(username)
+//           .then(data => setRepositories(data))
+//           .catch(error => console.error('Error setting repositories:', error));
+//       }, []);
+
+//       return (
+//         <div>
+//           <h1>GitHub Repositories</h1>
+//           <ul>
+//             {repositories.map(repository => (
+//               <li key={repository.id}>{repository.name}</li>
+//             ))}
+//           </ul>
+//         </div>
+//       );
