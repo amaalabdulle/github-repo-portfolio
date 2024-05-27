@@ -20,7 +20,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/github-repo-portfolio">
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-3">
@@ -30,7 +30,6 @@ function App() {
             <ErrorBoundary FallbackComponent={ErrorFallback}>
               <Routes>
                 <Route path="/" element={<Repos />} />
-                <Route path="/repos" element={<Repos />} />
                 <Route path="/repos/:repoName" element={<SingleRepo />} />
                 <Route path="*" element={<Page404 />} />
               </Routes>
@@ -43,5 +42,4 @@ function App() {
 }
 
 export default App;
-
 
